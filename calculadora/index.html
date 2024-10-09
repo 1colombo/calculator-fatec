@@ -1,0 +1,80 @@
+<!-- Danilo dos Santos Dias
+    Gustavo Neves Buzois
+    João Vitor Colombo
+    Matheus Cordeiro-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> <!--Fontes do site-->
+    <link rel="icon" href="calcular.png" type="image/x-icon"> <!--Icone da página-->
+</head>
+<body>
+    <div class="cd">
+        <div class="calculadora">
+            <div class="telinha">
+                <input type="text" id="tela">
+            </div>
+            <div class="teclado"> <!--Botões da calculadora-->
+                <table>
+                    <tr>
+                        <td><button class="formu">G</button></td>
+                        <td><button class="formu">R</button></td>
+                        <td><button class="formu">J</button></td>
+                        <td><button class="formu">M</button></td>
+                        <td><button class="apagar" onclick="limparTela()">AC</button></td>
+                        <td><button class="apagar" onclick="deletar()">DEL</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>log</button></td>
+                        <td><button>1/x</button></td>
+                        <td><button>x^2</button></td>
+                        <td><button>√x</button></td>
+                        <td><button>%</button></td>
+                        <td><button onclick="addTela('/')">&divide;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>x^y</button></td>
+                        <td><button class="trig" onclick="seno()">sin</button></td>
+                        <td><button class="number" onclick="addTela('7')">7</button></td>
+                        <td><button class="number" onclick="addTela('8')">8</button></td>
+                        <td><button class="number" onclick="addTela('9')">9</button></td>
+                        <td><button onclick="addTela('*')">&times;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>n√x</button></td>
+                        <td><button class="trig" onclick="cos()">cos</button></td>
+                        <td><button class="number" onclick="addTela('4')">4</button></td>
+                        <td><button class="number" onclick="addTela('5')">5</button></td>
+                        <td><button class="number" onclick="addTela('6')">6</button></td>
+                        <td><button onclick="addTela('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="addTela(')')">)</button></td>
+                        <td><button class="trig" onclick="tan()">tan</button></td>
+                        <td><button class="number" onclick="addTela('1')">1</button></td>
+                        <td><button class="number" onclick="addTela('2')">2</button></td>
+                        <td><button class="number" onclick="addTela('3')">3</button></td>
+                        <td><button onclick="addTela('-')">-</button></td>
+                    </tr>
+                        <td><button onclick="addTela('(')">(</button></td>
+                        <td><button><</button></td>
+                        <td><button>></button></td>
+                        <td><button class="number" onclick="addTela('0')">0</button></td>
+                        <td><button onclick="addTela('.')">.</button></td>
+                        <td><button class="igual" onclick="calcular()">=</button></td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #AEC5EB;
+}
+
+
+.cd {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.calculadora {
+    background-color: #CED3DC;
+    padding-top: 30px;
+    width: 500px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    box-shadow: rgba(7, 7, 7, 0.4) 5px 5px, rgba(28, 34, 85, 0.3) 10px 10px, rgba(13, 8, 80, 0.2) 15px 15px, rgba(88, 46, 240, 0.1) 20px 20px, rgba(88, 46, 240, 0.05) 25px 25px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    font-size: 19px;
+    transition: .2s ease;
+    cursor: pointer;
+    background-color: #484657;
+    color: white;
+    max-width: 175px; 
+}
+
+button:hover {
+    transform: scale(1.05);
+    filter: saturate(2.5);
+
+}
+
+.telinha {
+    width: 88%;
+    height: 60px;
+    background-color: #FCF7F8;
+    border-radius: 15px;
+}
+
+.telinha input {
+width: 100%;
+height: 100%;
+background: none;
+border-radius: 15px;
+border: none;
+font-size: 30px;
+cursor: pointer;
+color: rgb(72, 75, 107);
+text-align: end;
+padding: 10px;
+}
+
+.number {
+    background-color: #251e53;
+}
+
+.formu {
+    background-color: #e05930;
+}
+
+.trig {
+    background-color: #1d2d85;
+}
+
+.apagar {
+    background-color: #690a22;
+}
+
+.igual {
+    background-color: #690a22;
+}
+
+table {
+    border-spacing: 12px;
+} 
+
